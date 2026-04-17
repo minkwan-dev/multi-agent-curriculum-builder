@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  /* Pastel mint / sage */
+  --background: #f3f8f4;
+  --foreground: #1e2b22;
+  --accent: #6a9f78;
+  --accent-hover: #558963;
+  --accent-soft: #e8f3eb;
+  --accent-muted: #b5d4bf;
+  --border: #d9e8dd;
+  --muted: #5c6b62;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-ui-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-weight: 500;
+}
+
+::selection {
+  background: rgba(106, 159, 120, 0.28);
+}
